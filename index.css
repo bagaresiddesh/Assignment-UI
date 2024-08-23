@@ -45,12 +45,13 @@ body {
     position: absolute;
     left: 50px;
     border-bottom: 1px solid #ccc;
-    background: #FFFFFF;
     box-shadow: 0px 0px 4px 0px #A7A7A740;
     overflow: hidden;
+    cursor: pointer;
+    transition: height 0.3s ease-in-out;
 }
 
-/* Positioning for each box */
+/* Specific positioning for each box */
 #interactive-box-1 {
     top: 74px;
 }
@@ -63,42 +64,42 @@ body {
     top: 262px;
 }
 
-/* Header style for the interactive box */
-.interactive-box-header {
-    padding: 15px;
-    cursor: pointer;
-    font-size: 18px;
-    text-align: center;
-    background: #FFFFFF;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Content section of the interactive box */
-.interactive-box-content {
-    display: none; /* Hide content by default */
-    padding: 10px;
+/* Expanded state of the interactive box */
+.interactive-box.expanded {
+    height: auto;
+    /* Allows the box to expand based on content */
     background: #FFF9FA;
     border: 1px solid #FF6B82;
     border-radius: 12px;
-    position: relative;
 }
 
+/* Default collapsed state of the interactive box */
+.interactive-box.collapsed {
+    height: 74px;
+    /* Height when collapsed (only header is visible) */
+    box-shadow: 0px 0px 4px 0px #A7A7A740;
+}
 
-/* Styling the labels inside the content section */
-.interactive-box-content label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+/* Content inside the box (header + content) */
+.interactive-box-content {
+    padding: 15px;
 }
 
 /* Styling the select elements inside the content section */
+.interactive-box-content label,
+.interactive-box-content select {
+    display: block;
+    margin: 5px 0;
+}
+
 .interactive-box-content select {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
+
+
 
 /* Footer styles */
 .total-block {}

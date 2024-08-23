@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Boxes</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="container">
         <div class="container-title">YAY! It’s BOGO</div>
 
         <!-- Interactive Box 1 -->
-        <div class="interactive-box" id="interactive-box-1">
-            <div class="interactive-box-header" onclick="toggleBox('interactive-box-1')">Buy 1 Get 2</div>
+        <div class="interactive-box" id="interactive-box-1" onclick="toggleBox('interactive-box-1')">
             <div class="interactive-box-content">
+                <div class="interactive-box-header">Buy 1 Get 2</div>
                 <label for="color-select-1">Color:</label>
                 <select id="color-select-1">
                     <option value="red">Red</option>
@@ -29,18 +31,19 @@
             </div>
         </div>
 
+
         <!-- Interactive Box 2 -->
-        <div class="interactive-box" id="interactive-box-2">
-            <div class="interactive-box-header" onclick="toggleBox('interactive-box-2')">Buy 2 Get 4</div>
+        <div class="interactive-box" id="interactive-box-2" onclick="toggleBox('interactive-box-2')">
             <div class="interactive-box-content">
-                <label for="color-select-2">Color:</label>
-                <select id="color-select-2">
+                <div class="interactive-box-header">Buy 2 Get 4</div>
+                <label for="color-select-1">Color:</label>
+                <select id="color-select-1">
                     <option value="red">Red</option>
                     <option value="green">Green</option>
                     <option value="blue">Blue</option>
                 </select>
-                <label for="size-select-2">Size:</label>
-                <select id="size-select-2">
+                <label for="size-select-1">Size:</label>
+                <select id="size-select-1">
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
@@ -49,17 +52,17 @@
         </div>
 
         <!-- Interactive Box 3 -->
-        <div class="interactive-box" id="interactive-box-3">
-            <div class="interactive-box-header" onclick="toggleBox('interactive-box-3')">Buy 3 Get 6</div>
+        <div class="interactive-box" id="interactive-box-3" onclick="toggleBox('interactive-box-3')">
             <div class="interactive-box-content">
-                <label for="color-select-3">Color:</label>
-                <select id="color-select-3">
+                <div class="interactive-box-header">Buy 3 Get 6</div>
+                <label for="color-select-1">Color:</label>
+                <select id="color-select-1">
                     <option value="red">Red</option>
                     <option value="green">Green</option>
                     <option value="blue">Blue</option>
                 </select>
-                <label for="size-select-3">Size:</label>
-                <select id="size-select-3">
+                <label for="size-select-1">Size:</label>
+                <select id="size-select-1">
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
@@ -75,7 +78,8 @@
 
             <button class="add-button">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 3.33333V12.6667M3.33333 8H12.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 3.33333V12.6667M3.33333 8H12.6667" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span class="button-text">Add to Cart</span>
             </button>
@@ -89,4 +93,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>
