@@ -49,6 +49,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     transition: height 0.3s ease-in-out;
+    display: flex;
 }
 
 /* Specific positioning for each box */
@@ -98,6 +99,54 @@ body {
     border-radius: 3px;
     border: 1px solid #ccc;
 }
+
+.box-heading-discount-2 {
+    width: 70px;
+height: 74px;
+display: flex;
+gap: 0px;
+border-radius: 12px 0px 0px 12px;
+border: 0.9px 0px 0.9px 0.9px;
+opacity: 0px;
+background: #FF6B82;
+position: absolute;
+justify-content: space-around;
+vertical-align: middle;
+align-items: center;
+}
+
+.discount-text-2 {
+    width: 35px;
+    height: 38px;
+    top: 186px;
+    left: 68px;
+    gap: 0px;
+    opacity: 0px;    
+color: #FFFFFF;
+}
+
+.heading-text-2 {
+    width: 85px;
+height: 42px;
+top: 186px;
+left: 166.23px;
+gap: 6px;
+opacity: 0px;
+
+}
+
+.radio-2 {
+    width: 14.46px;
+height: 14.46px;
+top: 198px;
+left: 134px;
+gap: 0px;
+border: 0.9px 0px 0px 0px;
+opacity: 0px;
+
+}
+
+
 
 
 
