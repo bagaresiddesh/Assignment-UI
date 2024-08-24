@@ -66,7 +66,7 @@ body {
 
 /* Expanded state of the interactive box */
 .interactive-box.expanded {
-    height: auto;
+    height: 172px;
     background: #FFF9FA;
     border: 1px solid #FF6B82;
     border-radius: 12px;
@@ -87,7 +87,8 @@ body {
 
 /* Display content only when the box is expanded */
 .interactive-box.expanded .interactive-box-content {
-    display: block;
+    display: flex;
+    gap: 10px;
 }
 
 /* Styling the select elements inside the content section */
