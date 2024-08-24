@@ -64,149 +64,124 @@ body {
     top: 262px;
 }
 
-#interactive-box-1.collapsed {
-
-}
-
 /* Expanded state of the interactive box */
 .interactive-box.expanded {
     height: auto;
-    /* Allows the box to expand based on content */
     background: #FFF9FA;
     border: 1px solid #FF6B82;
     border-radius: 12px;
-    width: 342px;
-height: 172px;
-gap: 0px;
-border-radius: 12px;
-border: 1px solid #FF6B82;
-
+    padding-bottom: 10px;
 }
 
-/* Default collapsed state of the interactive box */
 .interactive-box.collapsed {
     height: 74px;
-    /* Height when collapsed (only header is visible) */
     box-shadow: 0px 0px 4px 0px #A7A7A740;
     border-radius: 12px 0px 0px 12px;
 }
 
 /* Content inside the box (header + content) */
 .interactive-box-content {
+    display: none;
     padding: 15px;
 }
 
-/* Styling the select elements inside the content section */
-.interactive-box-content label,
-.interactive-box-content select {
+/* Display content only when the box is expanded */
+.interactive-box.expanded .interactive-box-content {
     display: block;
-    margin: 5px 0;
 }
 
-.interactive-box-content select {
+/* Styling the select elements inside the content section */
+.label-group {
+    margin-bottom: 10px;
+}
+
+.label-group label {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.label-group select {
     width: 100%;
     padding: 8px;
     border-radius: 3px;
     border: 1px solid #ccc;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
 }
 
-.box-heading-discount-1 {
+/* Discount label when collapsed */
+.box-heading-discount-1,
+.box-heading-discount-2,
+.box-heading-discount-3 {
     width: 70px;
-height: 74px;
-display: flex;
-gap: 0px;
-border-radius: 12px 0px 0px 12px;
-border: 0.9px 0px 0.9px 0.9px;
-opacity: 0px;
-background: #FF6B82;
-position: absolute;
-justify-content: space-around;
-vertical-align: middle;
-align-items: center;
-}
-
-.discount-text-1 {
-    width: 35px;
-    height: 38px;
-    top: 186px;
-    left: 68px;
-    gap: 0px;
-    opacity: 0px;    
-color: #FFFFFF;
-}
-
-.heading-block-1 {
+    height: 74px;
     display: flex;
-    gap: 6px;
-    opacity: 0px;
-    position: sticky;
-    place-content: center;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-  align-items: center;
+    border-radius: 12px 0px 0px 12px;
+    background: #FF6B82;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.heading-text-1 {
+.discount-text-1,
+.discount-text-2,
+.discount-text-3 {
+    color: #FFFFFF;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Hiding the discount label when expanded */
+.interactive-box.expanded .box-heading-discount-1,
+.interactive-box.expanded .box-heading-discount-2,
+.interactive-box.expanded .box-heading-discount-3 {
+    display: none;
+}
+
+/* Styling for the heading block and content */
+.heading-block-1,
+.heading-block-2,
+.heading-block-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 90px; /* Adjust for the discount label */
+}
+
+.heading-text-1,
+.heading-text-2,
+.heading-text-3 {
     display: grid;
-}
-
-.radio-1 {
-    width: 14.46px;
-height: 14.46px;
-top: 104px;
-left: 134px;
-gap: 0px;
-opacity: 0px;
-border: 0.9px solid #FF6B82;
-}
-
-.heading-text-1 {
-    width: 83px;
-height: 42px;
-top: 92px;
-left: 166.23px;
-gap: 6px;
-opacity: 0px;
+    gap: 5px;
 }
 
 .heading-text-amount-light {
-    font-family: Inter;
-font-size: 14.46px;
-font-weight: 400;
-line-height: 17.5px;
-text-align: left;
-width: 78px;
-height: 18px;
-gap: 0px;
-opacity: 0px;
-
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
 }
 
 .heading-text-amount-dark {
-    font-family: Inter;
-    font-size: 14.46px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 17.5px;
-    text-align: left;
-    width: 83px;
-    height: 18px;
-    gap: 0px;
-    opacity: 0px;
+    color: #000;
 }
 
 .heading-text-popular {
-    width: 90px;
-height: 17px;
-top: 198px;
-left: 282px;
-gap: 0px;
-opacity: 0px;
-font-family: Inter;
-font-size: 14px;
-font-weight: 600;
-line-height: 16.94px;
-text-align: left;
-color: #FF6B82;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF6B82;
+    margin-left: 10px;
 }
 
 /* Footer styles */

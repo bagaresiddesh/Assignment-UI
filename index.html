@@ -13,17 +13,95 @@
         <div class="container-title">YAY! It’s BOGO</div>
 
         <!-- Interactive Box 1 -->
-        <div class="interactive-box" id="interactive-box-1" onclick="toggleBox('interactive-box-1')">
+        <div class="interactive-box collapsed" id="interactive-box-1" onclick="toggleBox('interactive-box-1')">
             <div class="box-heading-discount-1"><span class="discount-text-1">30% Off</span></div>
             <div class="heading-block-1">
-                <input type="radio" class="radio-1"></input>
-                <div class="heading-text-1"><span class="heading-text-amount-light">Buy 1 Get 2</span><span
-                        class="heading-text-amount-dark">$18.00 USD</span></div>
-                <div class="heading-text-popular">Most Popular</div>
+                <input type="radio" class="radio-1" name="radio" />
+                <div class="heading-text-1">
+                    <span class="heading-text-amount-light">Buy 1 Get 2</span>
+                    <span class="heading-text-amount-dark">$18.00 USD</span>
+                </div>
+            </div>
+            <div class="interactive-box-content">
+                <div class="label-group">
+                    <label for="size">Size</label>
+                    <select name="size" id="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div class="label-group">
+                    <label for="color">Colour</label>
+                    <select name="color" id="color">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
             </div>
         </div>
 
+        <!-- Interactive Box 2 -->
+        <div class="interactive-box collapsed" id="interactive-box-2" onclick="toggleBox('interactive-box-2')">
+            <div class="box-heading-discount-2"><span class="discount-text-2">30% Off</span></div>
+            <div class="heading-block-2">
+                <input type="radio" class="radio-2" name="radio" />
+                <div class="heading-text-2">
+                    <span class="heading-text-amount-light">Buy 2 Get 4</span>
+                    <span class="heading-text-amount-dark">$24.00 USD</span>
+                </div>
+                <div class="heading-text-popular">Most Popular</div>
+            </div>
+            <div class="interactive-box-content">
+                <div class="label-group">
+                    <label for="size2">Size</label>
+                    <select name="size2" id="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div class="label-group">
+                    <label for="color2">Colour</label>
+                    <select name="color2" id="color2">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
+        <!-- Interactive Box 3 -->
+        <div class="interactive-box collapsed" id="interactive-box-3" onclick="toggleBox('interactive-box-3')">
+            <div class="box-heading-discount-3"><span class="discount-text-3">30% Off</span></div>
+            <div class="heading-block-3">
+                <input type="radio" class="radio-3" name="radio" />
+                <div class="heading-text-3">
+                    <span class="heading-text-amount-light">Buy 3 Get 6</span>
+                    <span class="heading-text-amount-dark">$36.00 USD</span>
+                </div>
+            </div>
+            <div class="interactive-box-content">
+                <div class="label-group">
+                    <label for="size3">Size</label>
+                    <select name="size3" id="size3">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div class="label-group">
+                    <label for="color3">Colour</label>
+                    <select name="color3" id="color3">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
         <div class="footer-content">
             <div class="total-block">

@@ -1,24 +1,16 @@
-// JavaScript to toggle visibility of boxes
 function toggleBox(boxId) {
-  // Get all interactive boxes
-  const boxes = document.querySelectorAll(".interactive-box");
+  const box = document.getElementById(boxId);
+  const isExpanded = box.classList.contains('expanded');
 
-  // Loop through all boxes and handle the click
-  boxes.forEach((box) => {
-    if (box.id === boxId) {
-      // Toggle the clicked box between collapsed and expanded
-      box.classList.toggle("expanded");
-      box.classList.toggle("collapsed");
-    } else {
-      // Ensure all other boxes are collapsed
-      box.classList.add("collapsed");
-      box.classList.remove("expanded");
-    }
+  // Collapse all boxes
+  document.querySelectorAll('.interactive-box').forEach((box) => {
+      box.classList.remove('expanded');
+      box.classList.add('collapsed');
   });
-}
 
-// Ensure all boxes start collapsed
-document.addEventListener("DOMContentLoaded", () => {
-  const boxes = document.querySelectorAll(".interactive-box");
-  boxes.forEach((box) => box.classList.add("collapsed"));
-});
+  // Expand the clicked box if it was collapsed
+  if (!isExpanded) {
+      box.classList.remove('collapsed');
+      box.classList.add('expanded');
+  }
+}
