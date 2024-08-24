@@ -75,6 +75,12 @@ body {
     background: #FFF9FA;
     border: 1px solid #FF6B82;
     border-radius: 12px;
+    width: 342px;
+height: 172px;
+gap: 0px;
+border-radius: 12px;
+border: 1px solid #FF6B82;
+
 }
 
 /* Default collapsed state of the interactive box */
